@@ -20,16 +20,8 @@ ARG FLAG
 ENV FLAG=$FLAG
 
 # Install openjdk
-# RUN apt-get update && \
-#    apt-get install -y openjdk-8-jdk-headless && \
-#    apt-get clean;
-    
 RUN apt-get update && \
-    apt-get --yes --force-yes install software-properties-common && \
-    apt-get update && \
-    add-apt-repository ppa:openjdk-r/ppa && \
-    apt-get update && \
-    apt-get --yes --force-yes install openjdk-8-jre && \
+    apt-get install -y openjdk-11-jdk-headless && \
     apt-get clean;
 
 # Exec program to generate int array from FLAG value and output to file
