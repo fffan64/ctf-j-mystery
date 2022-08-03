@@ -25,11 +25,11 @@ ENV FLAG=$FLAG
 #    apt-get clean;
     
 RUN apt-get update && \
-    apt-get install software-properties-common && \
+    apt-get --yes --force-yes install software-properties-common && \
     apt-get update && \
     add-apt-repository ppa:openjdk-r/ppa && \
     apt-get update && \
-    apt-get install openjdk-8-jre && \
+    apt-get --yes --force-yes install openjdk-8-jre && \
     apt-get clean;
 
 # Exec program to generate int array from FLAG value and output to file
