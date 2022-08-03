@@ -24,7 +24,9 @@ ENV FLAG=$FLAG
 #    apt-get install -y openjdk-8-jdk-headless && \
 #    apt-get clean;
     
-RUN add-apt-repository ppa:openjdk-r/ppa && \
+RUN apt-get install software-properties-common && \
+    apt-get update && \
+    add-apt-repository ppa:openjdk-r/ppa && \
     apt-get update && \
     apt-get install openjdk-8-jre && \
     apt-get clean;
