@@ -1,0 +1,17 @@
+{
+  "name": "ctf-j-mystery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "jonathan.vacherat@axa.co.jp",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "qrcode": "^1.4.4"
+  }
+}

@@ -1,0 +1,3 @@
+# Mystery
+
+Go to `/`
